@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group = 'me.splitque'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url = "https://repo.papermc.io/repository/maven-public/" }
+    maven { url = "https://oss.sonatype.org/content/groups/public/" }
+}
+
+dependencies {
+    compileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
+}
